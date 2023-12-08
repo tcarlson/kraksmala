@@ -18,8 +18,9 @@
 
 ## Deployment
 
-The site is deployed with Github Pages, which is pointed at the "/docs" directory.
-Astro builds the static site in the "/dist" directory, therefore "/docs" is a symbolic link to "/dist".
+The site is deployed with Github Pages, which is pointed at the `/docs` directory.
+
+Astro builds the static site in the `/dist` directory, therefore `/dist` is a symbolic link to `/docs`.
 
 For domain configuration, refer to:
 https://deanattali.com/blog/multiple-github-pages-domains/
