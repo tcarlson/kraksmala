@@ -5,8 +5,9 @@ import backgroundImage from "~/assets/coverart.png";
 ---
 
 <section class="flex h-screen">
+  <!-- Hide image for mobile size -->
   <Image
-      class="object-cover"
+      class="object-cover hidden md:flex"
       src={backgroundImage}
       alt="Album cover"
   />
