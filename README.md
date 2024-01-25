@@ -31,9 +31,8 @@ Based on the [Astro Landing Page template](https://astro.build/themes/details/as
 
 ## Deployment
 
-The site is deployed with Github Pages, which uses the `/docs` directory.
-
-Astro builds the static site in the `/dist` directory, therefore `/dist` is a symbolic link to `/docs`.
+The site is deployed with Github Pages, based on the `/docs` directory.
+Therefore `./docs` is set as the build directory in `astro.config.mjs`
 
 For domain configuration, refer to:
 https://deanattali.com/blog/multiple-github-pages-domains/
