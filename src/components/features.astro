@@ -1,0 +1,66 @@
+---
+import { Icon } from "astro-icon";
+import type { FeatureItem } from "~/types";
+
+const features: Array<FeatureItem> = [
+  {
+    title: "Spotify",
+    icon: "fa-brands:spotify",
+    url: "https://open.spotify.com/artist/6gif6AvgOB9S7Sy9pw28o4"
+  },
+  {
+    title: "Apple",
+    icon: "fa:music",
+    url: "https://music.apple.com/us/artist/kr%C3%A5ksm%C3%A5la/1718666741"
+  },
+  {
+    title: "YouTube",
+    icon: "fa-brands:youtube",
+    url: "https://music.youtube.com/channel/UCnc56akoQq_jRbfdPrQoapg"
+  },
+  // {
+  //   title: "Amazon",
+  //   icon: "fa-brands:amazon",
+  //   url: "https://music.amazon.com/artists/B0CP32172N/kr%C3%A5ksm%C3%A5la"
+  // },
+  {
+    title: "Buy",
+    icon: "fa-brands:bandcamp",
+    url: "https://kraksmala.bandcamp.com"
+  },
+  {
+    title: "Follow",
+    icon: "fa-brands:instagram",
+    url: "https://www.instagram.com/kraksmala_music"
+  }
+];
+---
+
+<section class="flex h-screen">
+  <div class="m-auto space-y-24 px-8 py-32">
+    <section id="features" class="flex scroll-mt-24 flex-col items-center gap-4 space-y-8">
+      <div class="flex flex-col items-center gap-4 max-w-6xl">
+        <h2 class="text-center font-extrabold tracking-tight text-6xl">
+          Kråksmåla's debut album is now available on all major streaming platforms.
+        </h2>
+      </div>
+      <ul class="grid max-w-6xl grid-cols-1 md:grid-cols-3 lg:grid-cols-5">
+        {
+          features.map(({ title, url, icon }) => (
+              <li>
+                <a href={url} target="_blank">
+                <div class="flex flex-col items-center gap-4 border border-default bg-offset p-10 hover:opacity-75 hover:text-gray-200" >
+                <div class="h-20 w-20 rounded-full border-2 border-current p-4">
+                  <Icon name={icon} />
+                </div>
+                <div class="text-center font-extrabold text-xl">{title}</div>
+                <!--<p class="text-center text-offset text-sm">{description}</p>-->
+                </div>
+                </a>
+              </li>
+          ))
+        }
+      </ul>
+    </section>
+  </div>
+</section>

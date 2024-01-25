@@ -1,0 +1,17 @@
+---
+import { Image } from "astro:assets";
+import { Icon } from "astro-icon";
+import backgroundImage from "~/assets/coverart.png";
+---
+
+<section class="flex h-screen">
+  <Image
+      class="object-cover"
+      src={backgroundImage}
+      alt="Album cover"
+  />
+  <iframe src="https://open.spotify.com/embed/album/45HoBPkko2Aa3caayZucEd"
+          class="w-full"
+          frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+  </iframe>
+</section>

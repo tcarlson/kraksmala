@@ -1,6 +1,20 @@
-# Public Website
+# Kråksmåla Music - Landing Page
 
-[![Built with Astro](https://astro.badg.es/v1/built-with-astro.svg)](https://astro.build)
+Built with the [Astro](https://astro.build) static site generator.
+
+Based on the [Astro Landing Page template](https://astro.build/themes/details/astro-landing-page/).
+
+## Template Features
+
+- 💨 Tailwind CSS for styling
+- 🎨 Themeable
+  - CSS variables are defined in `src/styles/theme.css` and mapped to Tailwind classes (`tailwind.config.cjs`)
+- 🌙 Dark mode
+- 📱 Responsive (layout, images, typography)
+- ♿ Accessible (as measured by https://web.dev/measure/)
+- 🔎 SEO-enabled (as measured by https://web.dev/measure/)
+- 🔗 Open Graph tags for social media sharing
+- 💅 [Prettier](https://prettier.io/) setup for both [Astro](https://github.com/withastro/prettier-plugin-astro) and [Tailwind](https://github.com/tailwindlabs/prettier-plugin-tailwindcss)
 
 ## Commands
 
@@ -15,10 +29,9 @@
 | `npm run format`       | Format code with [Prettier](https://prettier.io/) |
 | `npm run clean`        | Remove `node_modules` and build output            |
 
-
 ## Deployment
 
-The site is deployed with Github Pages, which is pointed at the `/docs` directory.
+The site is deployed with Github Pages, which uses the `/docs` directory.
 
 Astro builds the static site in the `/dist` directory, therefore `/dist` is a symbolic link to `/docs`.
 
