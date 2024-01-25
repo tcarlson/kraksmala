@@ -31,8 +31,10 @@ Based on the [Astro Landing Page template](https://astro.build/themes/details/as
 
 ## Deployment
 
-The site is deployed with Github Pages, based on the `/docs` directory.
+The site is deployed with GitHub Pages, based on the `/docs` directory.
 Therefore `./docs` is set as the build directory in `astro.config.mjs`
+
+Note that GitHub Pages will ignore the `_astro` directory unless [a `.nojekyll` file is present](https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/). 
 
 For domain configuration, refer to:
 https://deanattali.com/blog/multiple-github-pages-domains/
